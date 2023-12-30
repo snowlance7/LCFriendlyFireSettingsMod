@@ -7,15 +7,16 @@ using System.Text;
 using System.Threading.Tasks;
 using HarmonyLib;
 using GameNetcodeStuff;
+using LCFriendlyFireSettingsMod.Patches;
 
-namespace LCFriendlyFireSettingsMod.Patches
+namespace LCFriendlyFireSettingsMod
 {
     [BepInPlugin(modGUID, modName, modVersion)]
     public class LCFriendlyFireSettingsModBase : BaseUnityPlugin
     {
-        private const string modGUID = "Posiedon.LCTutorialMod";
-        private const string modName = "LC Tutorial Mod";
-        private const string modVersion = "1.0.0.0";
+        private const string modGUID = "Posiedon.LCFriendlyFireSettingsMod";
+        private const string modName = "Friendly Fire Settings Mod";
+        private const string modVersion = "1.0.1";
 
         private readonly Harmony harmony = new Harmony(modGUID);
         private static LCFriendlyFireSettingsModBase Instance;
