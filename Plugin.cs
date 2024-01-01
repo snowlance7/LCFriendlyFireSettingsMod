@@ -16,16 +16,13 @@ namespace LCFriendlyFireSettingsMod
     [BepInPlugin(modGUID, modName, modVersion)]
     public class LCFriendlyFireSettingsModBase : BaseUnityPlugin
     {
-        private const string modGUID = "Posiedon.LCFriendlyFireSettingsMod";
+        private const string modGUID = "Snowlance.LCFriendlyFireSettingsMod";
         private const string modName = "Friendly Fire Settings Mod";
         private const string modVersion = "1.0.1";
 
         private readonly Harmony harmony = new Harmony(modGUID);
         private static LCFriendlyFireSettingsModBase Instance;
         public static ManualLogSource LoggerInstance { get; private set; }
-
-        // Config Settings
-        public ConfigFile customFile = new ConfigFile(Path.Combine(Paths.ConfigPath, "friendlyfiresettings.cfg"), true);
 
         public static ConfigEntry<bool> configShip;
         public static ConfigEntry<bool> configOutside;
