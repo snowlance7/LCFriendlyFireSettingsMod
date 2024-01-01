@@ -24,9 +24,6 @@ namespace LCFriendlyFireSettingsMod
         private static LCFriendlyFireSettingsModBase Instance;
         public static ManualLogSource LoggerInstance { get; private set; }
 
-        // Config Settings
-        public ConfigFile customFile = new ConfigFile(Path.Combine(Paths.ConfigPath, "friendlyfiresettings.cfg"), true);
-
         public static ConfigEntry<bool> configShip;
         public static ConfigEntry<bool> configOutside;
         public static ConfigEntry<bool> configFacility;
