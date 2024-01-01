@@ -1,1 +1,1 @@
-This is a simple mod that should make it so you cant hurt other players outside the facility. Using it mainly for my battle royale gamemode. Will add more settings later.
+This is a simple mod that allows you to change if you can hurt other players inside the ship, facility and outside. Uses DamagePlayerFromOtherClientServerRpc. All friendlyfire is set to false by default and can be changed in the config.
