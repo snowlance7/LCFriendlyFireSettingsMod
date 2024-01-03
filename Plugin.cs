@@ -18,7 +18,7 @@ namespace LCFriendlyFireSettingsMod
     {
         private const string modGUID = "Snowlance.LCFriendlyFireSettingsMod";
         private const string modName = "Friendly Fire Settings Mod";
-        private const string modVersion = "1.0.1";
+        private const string modVersion = "1.0.4";
 
         private readonly Harmony harmony = new Harmony(modGUID);
         private static LCFriendlyFireSettingsModBase Instance;
